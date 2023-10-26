@@ -2,7 +2,7 @@
 ![](./images/predict.jpg)
 ## 1、项目架构介绍
 ### 1.1、基本架构
-`\roadTrafficForcast        根目录
+```\roadTrafficForcast        根目录
 +--readme.md                提示文档
 +--code/                    主要代码
    +--dataClean/               清洗代码
@@ -15,11 +15,13 @@
    +--data/                    演示用数据，与前面同名数据一致
    +--model/                   训练输出模型，供flask项目调用
    +--static/              flask项目静态数据
-   +--templates/           页面模板`
+   +--templates/           页面模板
+```
+
 ### 1.2、详细架构
-`\roadTrafficForcast        根目录
-+--readme.md                提示文档
-+--code/                    主要代码
+```\roadTrafficForcast     根目录
++--readme.md                 提示文档
++--code/                     主要代码
    +--dataClean/               清洗代码
       +--dataClean.py            数据清洗代码
       +--data_expand.py          数据扩充代码
@@ -29,7 +31,7 @@
       +--data_out.py             动态时间步生成的lstm、gru预测数据
       +--Flow-vs-Avg_kph.png     判断数据字段相关性代码输出的图像
       +--GRU_static_3Day.png     GRU静态时间步三日预测图
-      +--LSTM_GRU_dynamic_12H.png    LSTM、GRU动态时间步12小时预测图
+      +--LSTM_GRU_dynamic_12H.pngLSTM、GRU动态时间步12小时预测图
       +--LSTM_static_3Day.png    LSTM静态时间步三日预测图
       +--merged_file.csv         concreate.py输出的合并文件
       +--model_graph.py          绘制图像
@@ -51,22 +53,24 @@
    +--appDemo.py               用于演示动态时间步预测效果
    +--Procfile
    +--data/                    演示用数据，与前面同名数据一致
-      +--output_test_data_expand.csv     扩充输出数据
-      +--output_test_data_expand_Demo.csv    扩充输出数据，用于演示动态时间步
+      +--output_test_data_expand.csv      扩充输出数据
+      +--output_test_data_expand_Demo.csv 扩充输出数据，用于演示动态时间步
    +--model/                   训练输出模型，供flask项目调用
       +--GRU.h5                  
       +--GRU_loss.csv
       +--LSTM.h5
       +--LSTM_loss.csv
-   +--static/              flask项目静态数据
+   +--static/                  flask项目静态数据
       +--GRU_static_3Day.png
       +--logo.png
       +--LSTM_GRU_dynamic_12H.png
       +--LSTM_static_3Day.png
-   +--templates/           页面模板
-      +--index.html`
+   +--templates/               页面模板
+      +--index.html
+```
 ## 2、环境及外部库要求（仅展示主要的库,完整库请看requirements.txt文档）
-`python3.11
+```
+python 3.11
 Flask	2.2.3
 keras	2.12.0rc1
 matplotlib	3.7.1	
@@ -79,7 +83,7 @@ tensorflow	2.12.0rc1
 tensorflow-estimator	2.12.0rc0	
 tensorflow-intel	2.12.0rc1	
 tensorflow-io-gcs-filesystem	0.31.0
-`
+```
 ## 3、代码执行流程介绍
 ### 3.1、整体流程
 ```mermaid
