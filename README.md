@@ -1,4 +1,4 @@
-# roadTrafficForcast
+# TrafficPredict
 ![](./images/predict.jpg)
 ## 1、项目架构介绍
 ### 1.1、基本架构
@@ -144,3 +144,5 @@ for name, model in zip(names, models):
 # plot_LSTM_oneDay(y_test[: 864], y_preds[: 864])  # 三天的静态时间步预测，
 plot_GRU_oneDay(y_test[: 864], y_preds[: 864])
 ```
+
+
