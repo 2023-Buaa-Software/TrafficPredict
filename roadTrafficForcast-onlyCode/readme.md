@@ -2,7 +2,8 @@
 
 ## 1、项目架构介绍
 ### 1.1、基本架构
-`\roadTrafficForcast        根目录
+```
+roadTrafficForcast        根目录
 +--readme.md                提示文档
 +--code/                    主要代码
    +--dataClean/               清洗代码
@@ -15,9 +16,11 @@
    +--data/                    演示用数据，与前面同名数据一致
    +--model/                   训练输出模型，供flask项目调用
    +--static/              flask项目静态数据
-   +--templates/           页面模板`
+   +--templates/           页面模板
+```
 ### 1.2、详细架构
-`\roadTrafficForcast        根目录
+```
+roadTrafficForcast        根目录
 +--readme.md                提示文档
 +--code/                    主要代码
    +--dataClean/               清洗代码
@@ -64,22 +67,24 @@
       +--LSTM_GRU_dynamic_12H.png
       +--LSTM_static_3Day.png
    +--templates/           页面模板
-      +--index.html`
+      +--index.html
+```
 ## 2、环境及外部库要求（仅展示主要的库,完整库请看requirements.txt文档）
-`python3.11
-Flask	2.2.3
-keras	2.12.0rc1
-matplotlib	3.7.1	
-numpy	1.24.2
-pandas	2.0.1	
-pip	23.0.1
-requests	2.28.2
-scikit-learn	1.2.2
-tensorflow	2.12.0rc1	
-tensorflow-estimator	2.12.0rc0	
-tensorflow-intel	2.12.0rc1	
-tensorflow-io-gcs-filesystem	0.31.0
-`
+```
+python                         3.11
+Flask	                         2.2.3
+keras	                         2.12.0rc1
+matplotlib                  	 3.7.1	
+numpy	                         1.24.2
+pandas	                      2.0.1	
+pip	                         23.0.1
+requests	                      2.28.2
+scikit-learn	                1.2.2
+tensorflow	                   2.12.0rc1	
+tensorflow-estimator	          2.12.0rc0	
+tensorflow-intel	             2.12.0rc1	
+tensorflow-io-gcs-filesystem	 0.31.0
+```
 ## 3、代码执行流程介绍
 ### 3.1、整体流程
 ```mermaid

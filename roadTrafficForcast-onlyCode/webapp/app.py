@@ -15,8 +15,8 @@ app.debug=True
 
 @app.route('/', methods=['GET', 'POST'])
 def main():
-    print(18, os.getcwd()) #打印出当前工作路径 
-    print(19, os.path.exists('data/output_test_data_expand.csv'))
+    # print(18, os.getcwd()) #打印出当前工作路径 
+    # print(19, os.path.exists('data/output_test_data_expand.csv'))
     # 读入数据
     df = pd.read_csv("data/output_test_data_expand.csv", parse_dates=["datetime (Veh/5 Minutes)"],
                      index_col="datetime (Veh/5 Minutes)")
@@ -94,11 +94,8 @@ def main():
 
 if __name__ == '__main__':
     #app.run(host='127.0.0.1', port=9999)
-    print(18, os.getcwd()) #打印出当前工作路径 
-    print(19, os.path.exists('roadTrafficForcast-onlyCode/webapp/data/output_test_data_expand.csv'))
     # 读入数据
     df = pd.read_csv("data/output_test_data_expand.csv", parse_dates=["datetime (Veh/5 Minutes)"],
                      index_col="datetime (Veh/5 Minutes)")
-    print(102, df)
     server = pywsgi.WSGIServer(('127.0.0.1', 9999), app)
     server.serve_forever()

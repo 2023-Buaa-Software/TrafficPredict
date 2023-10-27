@@ -70,19 +70,19 @@
 ```
 ## 2、环境及外部库要求（仅展示主要的库,完整库请看requirements.txt文档）
 ```
-python 3.11
-Flask	2.2.3
-keras	2.12.0rc1
-matplotlib	3.7.1	
-numpy	1.24.2
-pandas	2.0.1	
-pip	23.0.1
-requests	2.28.2
-scikit-learn	1.2.2
-tensorflow	2.12.0rc1	
-tensorflow-estimator	2.12.0rc0	
-tensorflow-intel	2.12.0rc1	
-tensorflow-io-gcs-filesystem	0.31.0
+python                         3.11
+Flask	                         2.2.3
+keras	                         2.12.0rc1
+matplotlib                  	 3.7.1	
+numpy	                         1.24.2
+pandas	                      2.0.1	
+pip	                         23.0.1
+requests	                      2.28.2
+scikit-learn	                1.2.2
+tensorflow	                   2.12.0rc1	
+tensorflow-estimator	          2.12.0rc0	
+tensorflow-intel	             2.12.0rc1	
+tensorflow-io-gcs-filesystem	 0.31.0
 ```
 ## 3、代码执行流程介绍
 ### 3.1、整体流程
